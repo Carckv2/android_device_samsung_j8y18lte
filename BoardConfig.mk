@@ -16,6 +16,8 @@
 -include vendor/samsung/j8y18lte/BoardConfigVendor.mk
 LOCAL_PATH := device/samsung/j8y18lte
 BUILD_TOP := $(shell pwd)
+
+# Build
 BUILD_BROKEN_DUP_RULES := true
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
@@ -49,10 +51,10 @@ BOARD_KERNEL_CMDLINE := console=null androidboot.hardware=qcom msm_rtb.filter=0x
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset $(BOARD_RAMDISK_OFFSET) --tags_offset $(BOARD_TAGS_OFFSET)
 
 # Kernel config
-TARGET_KERNEL_SOURCE := kernel/realme/spaced
-TARGET_KERNEL_CONFIG := spaced_defconfig
+TARGET_KERNEL_SOURCE := kernel/samsung/j8y18lte
+TARGET_KERNEL_CONFIG := j8y18lte_defconfig
 TARGET_FORCE_PREBUILT_KERNEL := true
-TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/prebuilts/kernel
+TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/prebuilt/kernel
 
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE :=  33554432 #25
