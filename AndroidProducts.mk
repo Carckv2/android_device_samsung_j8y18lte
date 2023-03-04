@@ -13,4 +13,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/abc_j8y18lte.mk
+    $(LOCAL_DIR)/j8y18lte.mk
