@@ -13,4 +13,4 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/krypton_j8y18lte.mk
+    $(LOCAL_DIR)/abc_j8y18lte.mk
